@@ -1,0 +1,49 @@
+fairsplit.pl is a little utility I created to help split monthly bills with
+a roommate.    Basically I needed a utility that would calculate the obligations
+of both of the people based upon each persons percentage of the total income to
+the household.  This makes for a fair distribution of debt.   If one person makes
+twice as much money as the other one, it would not be fair to have both people
+paying half of the bills.  One person would be spending a much larger percentage
+of his income than the other.  
+
+Usage:
+
+   Upon startup fairsplit will load the fairsplit.conf file.  If the configuration file
+      does not exist, a new one will be generated.
+      
+   The yearly salary for person A and B are entered into their associated income entry
+      widget.  Actually the salary numbers dont have to be yearly, they just need to be 
+      comparable in terms of time.  Monthly numbers would work just as well..
+      After both salaries are entered and return is pressed, the percentage of
+      the total income is calculated and displayed in the percentage fields.   
+      
+   Bills to be split between both people are entered into the "shared" pane. 
+   
+   Bills or extra payments for person A or B (but not to be split with the other
+      person) are entered into their associated panes.   The amount and a small
+      description of the bill can be entered.  When return is pressed, the new 
+      entry is pushed onto the list for that person, and the totals are re-calculated.
+      
+   To remove a payment - double click the item - There are no confirmations, so dont
+      double-click an item unless you really want to remove it..
+   
+   The "Total" field for Person A, B and Shared shows the total obligations.  
+   
+   The "Check" field is really just the total field divided by 2 (a lot of people
+   are payed bi-weekly) - this shows the amount the person owes for each paycheck.
+   
+   The "Calculate" button is not really necessary since calculation is automatic when a new
+   item is entered, but sometimes people wanted to ensure calculation is being done.
+   
+   The "Save" button will save the data contents to a file "fairsplit.txt"
+      
+I wrote fairsplit for a specific purpose, but it could easily be modified for other
+things.  
+
+I have included a sample fairsplit.conf file to illustrate the utility.
+
+Monty Scroggins
+
+Monty4@flash.net
+
+http://www/flash.net/~monty4
